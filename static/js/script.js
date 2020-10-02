@@ -34,7 +34,7 @@ const headerBg = () => {
 	}
 };
 
-window.addEventListener('scroll', headerBg);
+if (window.innerWidth > 765) window.addEventListener('scroll', headerBg);
 
 const openFormPopup = () => {
 	const buttons = document.querySelectorAll('.modal__button');
