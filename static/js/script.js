@@ -8,7 +8,8 @@ const smoothScroll = () => {
 			const blockID = anchor.getAttribute('href'),
 				idElem = document.querySelector(blockID);
 			if (idElem) {
-				const idElemY = idElem.offsetTop - 100;
+				const header = document.querySelector('.header');
+				const idElemY = idElem.offsetTop - header.offsetHeight;
 				window.scrollTo({
 					top: idElemY,
 					behavior: 'smooth'

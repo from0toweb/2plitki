@@ -31,6 +31,7 @@ li
     right: 0
     margin-left: -25px
     z-index: 50
+    cursor: pointer
 
     & span,
     & span::after,
@@ -506,6 +507,11 @@ input
     &:hover
         background-color: #33333344
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+    -moz-appearance: textfield
+    margin: 0
 
 
 
@@ -623,5 +629,4 @@ input
             font-size: 6rem
     .works__title,
     .calc__title
-
         font-size: 4.5rem
